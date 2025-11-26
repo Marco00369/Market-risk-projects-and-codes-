@@ -1,0 +1,553 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "c7e47d78-1582-442d-908b-dbbaa1326508",
+   "metadata": {},
+   "source": [
+    "## Python concepts"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "25c34e4b-700f-4db3-b0bc-650b5863621a",
+   "metadata": {},
+   "source": [
+    "## Varaibles in python"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "d83f1788-5d2a-4343-af45-12e270850c9d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " test_string =' Hello World'\n",
+    "test_integer = 123456789\n",
+    "test_float = 3.75"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "708348bd-aabd-4e86-b5c9-9daa14ab5891",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cc= 9875684625"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "a1c7ac64-808a-44d8-8768-c0a115bcc3bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Hello World 123456789 3.75 9875684625\n"
+     ]
+    }
+   ],
+   "source": [
+    "print( test_string,test_integer,test_float,cc)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "293f228f-b9bc-470f-8a93-9e1fbe9f265d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Hello World\n"
+     ]
+    }
+   ],
+   "source": [
+    "test_=test_string\n",
+    "print(test_)    ### it will store the existing value in new varaible it was just like a proxy when we want to chaneg the existing value then it was useful\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "317ff5d1-49a6-4d14-8d0f-f7ceebe9b721",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello i am naidu\n"
+     ]
+    }
+   ],
+   "source": [
+    "test_string='hello i am naidu'\n",
+    "\n",
+    "print(test_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "41aef46a-4a29-4eb2-9492-906d4bd0a079",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Hello World\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(test_)  ## i can recall the value for my furthur use."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "e34fe660-041e-4f82-ae97-2a3e7a84d262",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello i am naidu\n",
+      "123456789\n"
+     ]
+    }
+   ],
+   "source": [
+    "test_=test_string\n",
+    "print(test_)\n",
+    "\n",
+    "test_ = test_integer\n",
+    "print(test_)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "034f98cd-15da-405f-9cf3-1e7e1be1638d",
+   "metadata": {},
+   "source": [
+    "A vasraible name cannot start with alphabet and numerical we cannot have name with 1 test and 2 test instead e[=we can consider with test1 or test2 \n",
+    "test_1, a varaible can only contain alpha numeraical characyters and underscores it cannot contain symbols in the name like test_string or scalation marks or dollar symbools\n",
+    "these vazriable names or senstive once a define a variable name  \"Test\" then we have to same case so varaibel names are casde senmstive\n",
+    "it can used names it was alrwady in python function"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2a4c72a1-e91c-45f0-ad78-950cdf04be5b",
+   "metadata": {},
+   "source": [
+    "## functions:type() to check type of object"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "c4428dd2-ee72-4c9c-90c0-23fa9140bb49",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(test_string))prin"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "da0723ee-5400-4353-a163-6c2a6e7aa7e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(test_integer))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "97f8e031-9e43-49ea-92b8-b17f09fedc46",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'float'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(test_float))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2ca95f9b-64d1-47be-910a-4a8c315e8e1d",
+   "metadata": {},
+   "source": [
+    "## Casting functions\n",
+    "times when we would be want change type of varaible where the dats is unformagted data to format data "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "5844384a-0c5e-429d-bb3f-6382d84fe8a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'123456789'"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str(test_integer)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "9d4f6e5d-4bef-482f-b018-ac3fafc9be2b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123456789\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(str(test_integer))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "3690f15d-a6e0-452c-ba60-81d1c2c05a4b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(str(test_integer)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "f6cac783-6ca8-4217-bf43-142b044d65b9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'float'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(float(test_integer)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "6eb66e3c-7087-4c2e-9dd7-35be419e87c8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123456789.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(float(test_integer))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "3beb7f55-4c78-44b5-b6c0-c22704be7f57",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(int(test_float))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "8d70d914-bfca-474e-8315-813fda4e117e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(int(test_float)))  ###interview question or case sceneriao"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "ed23ddcb-b5be-47d8-84de-b37c03aaf826",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello i am naidu\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (test_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "b997e467-799f-4cd9-8c6a-89abf7ab5c14",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: 'hello i am naidu'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[28], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;28mint\u001b[39m(test_string))\n",
+      "\u001b[1;31mValueError\u001b[0m: invalid literal for int() with base 10: 'hello i am naidu'"
+     ]
+    }
+   ],
+   "source": [
+    "print(int(test_string))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "607baf7d-6be9-4e96-89e7-69187bcee33c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## EXample 1.1.2"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e3ab8bb0-4d92-422c-b07e-b89dc0388b9a",
+   "metadata": {},
+   "source": [
+    "know we can see we can use cast from data type and fro m exapmle"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "7bc3f7c6-a046-4d38-8e18-29bbec5bb2de",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Programmer = 'NagaNaidu'\n",
+    "gmail = 'buddanaganaidu@gamil.com'\n",
+    "score = 9.8\n",
+    "phone = 994865326\n",
+    "address ='3rd cross, aswath nagar,Maarathathalli , Benagaluru (EA).560037'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "38a5c02b-0091-4440-948d-2b0294d87d72",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "NagaNaidu\n",
+      "994865326\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(Programmer)\n",
+    "print(phone)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "64fba253-285d-42b3-bd27-44d80ce15eed",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "NagaNaidu = 994865326\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(Programmer,'=',phone)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "bfa30893-086c-4e27-8a3a-be04428b31c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "994865326 buddanaganaidu@gamil.com 3rd cross, aswath nagar,Maarathathalli , Benagaluru (EA).560037\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(phone, gmail, address)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "f361915e-3d1e-48ee-95c9-125bca0ced9c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "994865326\n",
+      "buddanaganaidu@gamil.com\n",
+      "3rd cross, aswath nagar,Maarathathalli , Benagaluru (EA).560037\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(phone)\n",
+    "print(gmail)\n",
+    "print(address)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "06e2bd88-ec92-4d2d-80bf-b6bfcbe2c866",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "phone: 994865326\n",
+      "gmail: buddanaganaidu@gamil.com\n",
+      "personal address: 3rd cross, aswath nagar,Maarathathalli , Benagaluru (EA).560037\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('phone:',phone)\n",
+    "print('gmail:',gmail)\n",
+    "print('personal address:',address)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6d7a0d87-2f70-495f-b787-b1514c5f6653",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
